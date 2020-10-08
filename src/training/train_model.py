@@ -75,7 +75,7 @@ optimizer = optim.Adam(model.parameters(), lr=opt.learning_rate)
 n_train_samples = None if not opt.n_samples else int(opt.n_samples * 0.8)
 n_val_samples = None if not opt.n_samples else int(opt.n_samples * 0.1)
 
-train_set = RNAFamilyGraphDataset(opt.train_dataset, opt.foldings_dataset,
+train_set = RNAFamilyGraphDataset(file_path=opt.train_dataset, foldings_path=opt.foldings_dataset,
                                   seq_max_len=opt.seq_max_len,
                                     seq_min_len=opt.seq_min_len,
                                     n_samples=n_train_samples)
