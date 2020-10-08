@@ -3,3 +3,5 @@
 models_family_classification/
 results_family_classification/
 */__pycache__/
+./tmp
+!./tmp/.gitkeep
